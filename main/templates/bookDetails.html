@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styleBookDetails.css' %}" type="text/css">
+</head>
+<body>
+<div class="book-expanded-container">
+    <div class="row">
+        <div class="col-3">
+            <div class="book-image">
+                <img src="../static/img/textbook_cover_sample.jpg">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="title-block">
+                <h1>Book Title</h1>
+                <h2>First Last</h2><br>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="seller-profile-block">
+                <div class="row">
+                    <div class = "col-4">
+                        <img src="../static/img/seller_pic_sample.png">
+                    </div>
+                    <div class = "col-1">
+                    </div>
+                    <div class = "col-6">
+                        <h2>First Last</h2>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <a href="#"><p.lighter>VIEW SELLER PROFILE ></p.lighter></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <h3>Description:</h3>
+            <p>
+                Success in your calculus course starts here! James Stewart's CALCULUS: EARLY TRANSCENDENTALS texts are world-wide best-sellers
+                for a reason: they are clear, accurate, and filled with relevant, real-world examples. With CALCULUS: EARLY TRANSCENDENTALS,
+                Eighth Edition, Stewart conveys not only the utility of calculus to help you develop technical competence,
+                but also gives you an appreciation for the intrinsic beauty of the subject. His patient examples and built-in
+                learning aids will help you build your mathematical confidence and achieve your goals in the course.
+            </p>
+        </div>
+        <div class="col-3">
+            <h3>Details:</h3>
+            <p>1368 pages</p>
+            <p><b>Publisher:</b> Cengage Learning; 8 edition (February 4, 2015)</p>
+            <p><b>Language:</b> English</p>
+            <p><b>ISBN-10:</b> 9781285741550</p>
+            <p><b>ISBN-13:</b> 978-1285741550</p>
+        </div>
+        <div class="col-3">
+            <h3>Price:</h3>
+            <h2>$225.48</h2>
+            <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Buy now</button>
+        </div>
+        <div class="col-3 hidden-col">
+            <h2>Payment complete!</h2>
+            <h3>You've earned 20 tokens!</h3>
+            <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Buy now</button>
+        </div>
+
+</div>
+<script type="text/javascript" src="{% static 'login.js' %}"></script>
+
+</body>
+</html>
