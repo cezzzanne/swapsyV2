@@ -1,2 +1,2 @@
-web: gunicorn swapy2.wsgi --log-file -
+web: gunicorn swapyV2.wsgi --log-file -
 
