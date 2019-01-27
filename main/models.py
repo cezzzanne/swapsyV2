@@ -23,6 +23,9 @@ class Availability(models.Model):
 
 
 class Book(models.Model):
+    being_sold = models.BooleanField(default=True)
+    description = models.TextField()
+    image = models.ImageField(upload_to='pic_folder/')
     name = models.TextField()
     author = models.TextField()
     price = models.IntegerField()
