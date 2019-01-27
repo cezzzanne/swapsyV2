@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p.light {
+    font-weight: lighter;
+    color: lightgray;
+}
+
+.book-expanded-container {
+    padding: 2 5em;
+}
+
+.seller-profile-block {
+    background-color: lightgray;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
