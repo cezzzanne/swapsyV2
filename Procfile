@@ -1,2 +1,2 @@
-web: gunicorn campsite.wsgi --log-file -
+web: gunicorn swapy2.wsgi --log-file -
 
