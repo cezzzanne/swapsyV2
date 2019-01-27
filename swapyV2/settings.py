@@ -26,7 +26,7 @@ SECRET_KEY = 'bo71e=nb1m#13^8+7@-1qg!nwmkiia-@6_)07#@oghl!+j=o$7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['swapyv3.herokuapp.com']
+ALLOWED_HOSTS = ['swapyv3.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -86,6 +86,8 @@ DATABASES = {
 }
 
 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -104,9 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -126,6 +125,8 @@ LOGIN_URL = '/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -133,7 +134,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATIC_URL = '/static/'
 
