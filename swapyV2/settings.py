@@ -26,7 +26,7 @@ SECRET_KEY = 'bo71e=nb1m#13^8+7@-1qg!nwmkiia-@6_)07#@oghl!+j=o$7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['swapyv3.herokuapp.com']
 
 
 # Application definition
