@@ -20,7 +20,7 @@ django-jquery==3.1.0
 django-rest-framework==0.1.0
 django-tinymce==2.7.0
 django-widget-tweaks==1.4.3
-djangorestframework==3.9.0
+djangorestframework==3.11.2
 gast==0.2.0
 grpcio==1.16.1
 gunicorn==19.9.0
