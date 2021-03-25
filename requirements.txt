@@ -47,7 +47,7 @@ psycopg2==2.7.4
 pyparsing==2.3.0
 python-dateutil==2.7.3
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.4
 requests==2.19.1
 requests-oauth==0.4.1
 requests-oauthlib==1.0.0
